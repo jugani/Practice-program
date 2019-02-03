@@ -1,0 +1,11 @@
+x-ibm-configuration:
+  assembly:
+    cache: {}
+    execute:
+    - invoke: {cache-response: protocol, cache-ttl: 900, target-url: 'localhost:8080',
+        timeout: 6OO, title: invoke, verb: POST, version: 1.0.0}
+  enforced: enforced_boolean
+  phase: Phase
+  testable: true
+  verb: GET
+x-ibm-name: swagger-petstore
